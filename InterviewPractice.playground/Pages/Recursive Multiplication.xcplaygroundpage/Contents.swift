@@ -2,15 +2,16 @@
 
 import Foundation
 
-infix operator ** { precedence 150 }
+infix operator ** { precedence 150 } // create a custom operator called **
 
-func ** (lhs: Int, rhs: Int) -> Int {
+func ** (lhs: Int, rhs: Int) -> Int
+{
     assert(lhs >= 0 && rhs >= 0)
     guard lhs > 0 else { return 0 }
     return rhs + (lhs - 1) ** rhs
 }
 
-9 ** 7
+10 ** 3
 
 func mult(a: Int, b: Int) -> Int
 {
@@ -25,7 +26,7 @@ func mult(a: Int, b: Int) -> Int
     return result
 }
 
-mult(9, b: 7)
+mult(9, b: 4)
 
 func recursiveMult(a: Int, b: Int) -> Int
 {

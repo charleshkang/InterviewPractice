@@ -2,15 +2,6 @@
 
 import Foundation
 
-func factorial(n : Int) -> Int {
-    if n == 0 {
-        return 1
-    } else {
-        return n * factorial(n - 1)
-    }
-}
-factorial(5)
-
 var problem = "find the longest word in the problem description"
 
 

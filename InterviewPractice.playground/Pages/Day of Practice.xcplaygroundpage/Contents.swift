@@ -64,18 +64,3 @@ func noDupes(dupeString: String) -> String {
     return returnString
 }
 noDupes("apple")
-
-var str = "connecticut"
-var strToReturn = ""
-
-var dict = [Character:Int]() // creating an empty dict
-
-for char in str.characters {
-    if let _ = dict[char] {
-        continue
-    } else {
-        dict[char] = 1
-        strToReturn.append(char)
-    }
-}
-print(strToReturn)

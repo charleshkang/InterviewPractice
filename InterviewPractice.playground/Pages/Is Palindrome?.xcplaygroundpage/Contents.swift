@@ -7,11 +7,8 @@ func isPalindrome(str: String) -> Bool
     var reversedStr = ""
     
     for char in str.characters {
-        reversedStr =  "\(char)" + reversedStr
-        print(reversedStr)
+        reversedStr = "\(char)" + reversedStr
     }
     return str == reversedStr
 }
-isPalindrome("madam")
-
-
+isPalindrome("maddam")

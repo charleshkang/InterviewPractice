@@ -2,28 +2,15 @@
 
 import Foundation
 
-let n = 100
-var string = ""
-
-//for nums in 0..<n {
-//    if nums % 5 == 0 && nums % 3 == 0 {
-//        
-//    } else if nums % 5 == 0 {
-//        print("fizz")
-//    } else if nums % 3 == 0 {
-//        print("buzz")
-//    }
-//
-//}
-
-func fizzbuzz(n: Int) {
+func fizzbuzz(n: Int)
+{
     for nums in 1...n {
+        
         var string = ""
         
         if nums % 3 == 0 {
             string = "fizz"
         }
-        
         if nums % 5 == 0 {
             string += "buzz"
         }
@@ -35,3 +22,23 @@ func fizzbuzz(n: Int) {
 }
 fizzbuzz(100)
 
+func fizzBuzz(n: Int) {
+    
+    for nums in 1...n {
+        
+        var str = ""
+        
+        if nums % 3 == 0 {
+            str = "fizz"
+        }
+        if nums % 5 == 0 {
+            str += "buzz"
+        }
+        if str.isEmpty {
+            str += "\(nums)"
+        }
+        print(str)
+    }
+}
+
+fizzBuzz(100)

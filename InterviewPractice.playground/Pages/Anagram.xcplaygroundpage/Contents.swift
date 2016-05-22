@@ -2,11 +2,8 @@
 
 import Foundation
 
-let word = "hello"
-let permutatedWord = "elhlo"
-
-func isAnagram(word: String, permutatedWord: String) -> Bool {
-    
+func isAnagram(word: String, permutatedWord: String) -> Bool
+{
     if word.characters.count != permutatedWord.characters.count {
         return false
     }

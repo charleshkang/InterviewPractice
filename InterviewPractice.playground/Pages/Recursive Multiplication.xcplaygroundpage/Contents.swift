@@ -13,20 +13,22 @@ func ** (lhs: Int, rhs: Int) -> Int
 
 10 ** 3
 
-func mult(a: Int, b: Int) -> Int
+func mult(a: Int, b: Int) -> Int // not recursion
 {
     let bigger = max(a, b)
     let smaller = min(a, b)
     
     var result = 0
     
-    for _ in 0..<smaller {
+    for count in 0..<smaller {
+        print(count)
         result += bigger
+        print(result)
     }
     return result
 }
 
-mult(9, b: 4)
+mult(5, b: 8)
 
 func recursiveMult(a: Int, b: Int) -> Int
 {

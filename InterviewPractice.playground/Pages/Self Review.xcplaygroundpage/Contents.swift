@@ -34,6 +34,7 @@ func findSecondLargest(n: [Int]) -> Int {
     return secondLargest
 }
 findSecondLargest([3,2,3])
+findSecondLargest([5,3,2,1])
 findSecondLargest([5,1,10,3,2,1]) //5
 findSecondLargest([3,2,1]) //3
 findSecondLargest([6,1,2,3,7,8,1,100,20,499,3000,3001]) //3000

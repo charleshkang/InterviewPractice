@@ -47,7 +47,6 @@ class CavityMap: NSObject {
                             }
                         }
                     }
-                    
                     cavityMap[rowIndex] = cavityRow
                 }
                 

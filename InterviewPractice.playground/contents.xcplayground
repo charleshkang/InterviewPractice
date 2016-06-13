@@ -29,5 +29,7 @@
         <page name='No Dupes'/>
         <page name='Self Review'/>
         <page name='Cavity Map'/>
+        <page name='Review'/>
+        <page name='Practice @ Madman'/>
     </pages>
 </playground>

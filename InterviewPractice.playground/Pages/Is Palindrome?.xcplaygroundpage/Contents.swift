@@ -8,7 +8,6 @@ func isPalindrome(str: String) -> Bool
     
     for char in str.characters {
         reversedStr = "\(char)" + reversedStr
-        print(reversedStr)
     }
     return str == reversedStr
 }
